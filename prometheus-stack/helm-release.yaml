@@ -12,8 +12,6 @@ spec:
         namespace: flux-system
       version: "11.3.4"
   interval: 1h0m0s
-  dependsOn: 
-    - name: flux-system
   install:
     remediation:
       retries: 3
