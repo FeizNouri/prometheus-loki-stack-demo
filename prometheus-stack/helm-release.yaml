@@ -8,7 +8,7 @@ spec:
       chart: kube-prometheus-stack
       sourceRef:
         kind: HelmRepository
-        name: bitnami
+        name: prometheus-community
         namespace: flux-system
       version: "11.3.4"
   interval: 1h0m0s
