@@ -10,13 +10,10 @@ spec:
         kind: HelmRepository
         name: prometheus-community
         namespace: flux-system
-      version: "11.3.4"
   interval: 1h0m0s
-  dependsOn: 
-    - name: flux-system
   install:
     remediation:
-      retries: 3
+      retries: 4
   valuesFrom:
     - kind: ConfigMap
       name: hrv-prometheus-stack
